@@ -20,11 +20,9 @@ class MyBook : public Book
 {
 public:
 int price;
- MyBook(string t , string a , int p)
+ MyBook(string t , string a , int p) :Book(t,a)
  {
-   strcpy(this->title,t);
-   strcpy(this->author,a);
-   this->price = p;
+   price= p;
  }
  void display()
  {
